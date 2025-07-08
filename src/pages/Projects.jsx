@@ -4,6 +4,15 @@ import React from "react";
 const projects = [
   {
     id: 1,
+    title: "Quenswer - Q&A Platform",
+    description:
+      "A full-stack Q&A web app built with MERN stack featuring category-wise questions, answers, and user authentication.",
+    techStack: ["React", 'Next.js', "Node.js", "Express", "MongoDB", 'Mongoose', "Redux", "react-icons", 'Vercel', 'Render'],
+    github: "https://github.com/iamtarunmehra/quenswer",
+    liveDemo: "https://quenswer.vercel.app/",
+  },
+  {
+    id: 2,
     title: "Tic Tac Toe - Fun Game",
     description:
       "A game that user can play with 2 players and winner or looser functionality",
@@ -12,25 +21,7 @@ const projects = [
     liveDemo: "https://tic-tac-toe-rosy-eight.vercel.app/",
   },
   {
-    id: 2,
-    title: "Quenswer - Q&A Platform",
-    description:
-      "A full-stack Q&A web app built with MERN stack featuring category-wise questions, answers, and user authentication.",
-    techStack: ["React", 'Next.js', "Node.js", "Express", "MongoDB", 'Mongoose', "Redux", "react-icons", 'Vercel', 'Render'],
-    github: "https://github.com/iamtarunmehra/quenswer",
-    // liveDemo: "https://quenswer.vercel.app",
-  },
-  {
     id: 3,
-    title: "Law Prep - Educational web application",
-    description:
-      "A responsive frontend clone of LawPrep, designed for law entrance preparation platforms like CLAT and AILET..",
-    techStack: ["HTML", "CSS", 'Bootstrap', 'Javascript', 'react-icons', 'vercel',],
-    github: "https://github.com/iamtarunmehra/Law-prep",
-    liveDemo: "https://law-prep-omega.vercel.app/",
-  },
-  {
-    id: 4,
     title: "Personal Portfolio Website",
     description:
       "A responsive and modern portfolio website to showcase my web development projects, skills, and career journey. Designed to reflect my personality and coding style, with smooth animations, clean UI, and easy navigation.",
@@ -43,13 +34,23 @@ const projects = [
       "Vercel"
     ],
     github: "https://github.com/iamtarunmehra/myPortfolio",
-    // liveDemo: "https://law-prep-omega.vercel.app/"
-  }
+    liveDemo: "https://law-prep-omega.vercel.app/"
+  },
+  {
+    id: 4,
+    title: "Law Prep - Educational web application",
+    description:
+      "A responsive frontend clone of LawPrep, designed for law entrance preparation platforms like CLAT and AILET..",
+    techStack: ["HTML", "CSS", 'Bootstrap', 'Javascript', 'react-icons', 'vercel',],
+    github: "https://github.com/iamtarunmehra/Law-prep",
+    liveDemo: "https://law-prep-omega.vercel.app/",
+  },
+
 ];
 
 export default function Projects() {
   return (
-    <div className="max-w-6xl mx-auto px-6 py-16 cursor-pointer text-white">
+    <div className="max-w-5xl mx-auto px-6 py-16 cursor-pointer text-white">
       <h1 className="text-4xl font-bold mb-10 text-center">Showcasing My Development Projects</h1>
 
       {projects.map(({ id, title, description, techStack, github, liveDemo }) => (
@@ -80,15 +81,14 @@ export default function Projects() {
               GitHub
             </Link>
 
-            {id % 2 !== 0 && <Link
+            <Link
               href={liveDemo}
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2 border border-orange-500 hover:bg-orange-500 hover:text-white rounded font-semibold transition"
             >
               Live Demo
-            </Link>}
-
+            </Link>
           </div>
         </div>
       ))}
