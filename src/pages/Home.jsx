@@ -27,7 +27,8 @@ export default function Home() {
     { name: 'Git', icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGp2RKrzqJF2Cu3dxnk2RGK_F7SSloJG-Wyw&s' },
     { name: 'GitHub', icon: 'https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png' },
     { name: 'Vercel', icon: 'https://camo.githubusercontent.com/e40cb80a2b7078aaa29e48190c4d665cdfb0a56a0dc871638c7f81efbe230fdb/68747470733a2f2f6173736574732e76657263656c2e636f6d2f696d6167652f75706c6f61642f76313538383830353835382f7265706f7369746f726965732f76657263656c2f6c6f676f2e706e67' },
-    { name: 'Render', icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYCNbIA-i212X-rroiqrhtFpzIfDAD-2zo7g&s' }
+    { name: 'Render', icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYCNbIA-i212X-rroiqrhtFpzIfDAD-2zo7g&s' },
+    {name :'UptimeRobot',icon : 'https://play-lh.googleusercontent.com/cUrv0t00FYQ1GKLuOTvv8qjo1lSDjqZC16IOp3Fb6ijew6Br5m4o16HhDp0GBu_Bw8Y=w240-h480-rw'}
   ];
 
 
